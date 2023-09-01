@@ -1,0 +1,40 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+    int a,b;int f;
+    while(1)
+    {
+    printf("Enter first and second number:\n");
+    scanf("%d %d",&a,&b);
+    printf("Press 1 for addition\n2 for subtraction\n3 for multiplication\n4 for modulus\n5 for division\n6 for power\n7 for square root\n");
+    scanf("%d",&f);
+    switch(f)
+    {
+        case 1:printf("%d\n",a+b);
+        break;
+        case 2:printf("%d\n",a-b);
+        break;
+        case 3:printf("%d\n",a*b);
+        break;
+        case 4:printf("%d\n",a%b);
+        break;
+        case 5:printf("%d\n",a/b);
+        break;
+        case 6:printf("%f\n",pow(a,b));
+        break;
+        case 7:printf("%f\n",sqrt(a));
+    default:printf("Not a valid operation");
+    }
+    }
+    return 0;
+    
+}

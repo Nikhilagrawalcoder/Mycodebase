@@ -1,0 +1,2 @@
+st5='hello python'
+out=st5.rfind('o',15,5)

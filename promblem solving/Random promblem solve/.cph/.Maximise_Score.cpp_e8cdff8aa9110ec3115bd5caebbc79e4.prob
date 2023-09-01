@@ -1,0 +1,1 @@
+{"name":"Local: Maximise_Score","url":"e:\\placement-journey-1\\promblem solving\\Maximise_Score.cpp","tests":[{"id":1681919626662,"input":"5\n1 2 3 4 5","output":"5 4 3 2 1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\placement-journey-1\\promblem solving\\Maximise_Score.cpp","group":"local","local":true}

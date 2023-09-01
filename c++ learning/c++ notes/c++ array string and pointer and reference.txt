@@ -1,0 +1,15 @@
+Array::an array as a set of elements of same data type stored linearly at contigous memory locations.
+we use array when we want to store many variable then we make a array of these element due to which it is easily accesible.
+Array declaration::
+1)Array declaration by specifying size::
+int n=10;
+int a[n];
+2)Array declaration by initializing elements::
+int a[]={10,20, 30,40,50};
+3)Array declaration by specifying size and initializing elements:
+int a[5]={10,20,30,40,50};
+Some fact about array in c++:
+1) array element is accesible by indexing.
+2)
+No Index Out of bound Checking: There is no index out of bound checking in C/C++, for example the following program compiles fine but may produce unexpected output when run.
+3)it will store the data in a continuous memory location.

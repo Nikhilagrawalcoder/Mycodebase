@@ -1,0 +1,10 @@
+s=input()
+s2=input()
+k=s.lower()
+j=s2.lower()
+if(k==j):
+    print(0)
+elif(k<j):
+    print(-1)
+else:
+    print(1)        

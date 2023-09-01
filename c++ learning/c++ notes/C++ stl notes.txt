@@ -1,0 +1,91 @@
+ stl: it provides simple data structures function to implement that data structure. 
+it can be divided into types:
+1)CONTAINER
+simple:pair,vector,forward_list,list
+container adapter:stack,queue,dequeue
+Associative:set,map,unorderded map,unordered_set
+2)ALGORITHM:binary_search,find,reverse.
+container are based on template class.algorithm based on iterator.in algorithm begin included but end iterator not include.
+function:
+sort(arr,arr+4)
+binary_search(arr,arr+4,8)
+Iterators::
+begin(),end(),prev(),advance(),next()
+syntax:
+containername<datatype>::iterator i; it can also be replaced by auto i;
+iterator vs pointer:
+iterator allows the member aceess in container and apply different types of algorithm.when we have random access container, then iterator will be work as pointer. but forward list is not a random acess as it will give acess only in forward direction so it will not be work as pointer.
+begin return first element adress 
+end return last element adress
+next return after position ahead if position not given then it will give next value.
+prev return before position ahead if position not given then it wik give just before value.
+advance used to move different position ahead
+input  ouput
+    forward
+    bidirectional
+    random
+simple:
+forward_list forward type
+list bidirectional
+vector random
+Associative:
+bidirectional-set,map,multimap,multiset
+forward-unordered map,unordered set
+Adapters:
+queue,stack, priority queue (do not have iterators)
+input and output are used in algorithm 
+Template::
+write once and used any time when needed.
+like macros but better than macros as type checking is performed.
+two types:
+function templates:sort,linear search
+class templates:stack,queue,dequeue
+basic concept of temple is behind stl.
+
+Pairs:
+we have used pairs to reduce our time.default constructor has 0 and empty string value.
+we have to include library utility
+syntax:pair<datatype,datatype>variablename(value1,value2);
+for printuse p1.first,p1.second;
+we also intialse variable p={,};
+function :make_pair
+p1=make_pair(10,20);
+Comparison operator on pairs: it will return 0 and 1.
+1.p1==p2
+p1!=p2 it will give if 1 first value is satisfy condition and it iwll not check next value. it will check also next value
+p1<p2 it will also check first value firstly.if it satisfy condition then it will give answer.but it will next value check when first value is equal.
+p1>p2 same as upper  case.
+
+VECTOR: we need vector for dynamic size array means  many time we have array but we do not know the size to input the array . it is also that we increase the number of element in array then it will give error.
+vector advantage:
+1.) dynamic size,rich libray function(find,erase,insert)
+2.) easy to know size,no need to pass size, can be returned from a function, by default initialised with default values.
+we can copy a vector to other.
+v.size() give the size of array.  
+to declare vector we include vector 
+syntax(vector<data type> name ;
+insert element using push_back function. 
+if we acess the element outer the vector size through array method it will give outof bound error but if we use v.at(i) function then it will give exception. 
+for changing vector element we use reference as it wil directly change into their adreess.
+a.begin give the adrees of first element.
+a.end give the address the just after the end element.
+rbegin give the address of last element.
+r end give the adrress of just before the first element.
+MORE FUNCTION IN VECTOR::
+
+MISSELENEOUS::
+string:: 
+advantage 1) it support operators like >,<,>= etc.
+2) richer library.
+imporatant function:
+string s;
+1) length=s.length()
+2) s+"xyz"
+3)s.substr(starting position,length ) if not given then it will take remaining string length.
+4)s.find("substring) it will give  index value but  it will give string :: not pos if string not prresent.
+we use getline for taking input in a single line with comma sepreated getline(cin,string name,stopping character) default character="\n"
+string traversal::
+indexing,for each  loop, for iterator through string begin to string end
+we use refrece and const keyword whem we pass string to fucntion.
+
+5)

@@ -1,0 +1,12 @@
+1.pen and copy 
+2.laptop
+notes making:
+conceptual based notes detail notes 
+hard example dry run
+
+promblem solving notes crisp notes
+1.approches and time and space
+2.corner cases
+3.upload codes
+
+indexing is crtical in here

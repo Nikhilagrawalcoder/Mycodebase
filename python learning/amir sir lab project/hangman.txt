@@ -1,0 +1,151 @@
+import random
+def convert(s,ele,ind):
+    k = list(s)
+    k[ind] = ele
+    s = ''.join(k)
+    return s
+
+def save():
+    a = '''   \o/
+    |
+   / \ '''
+    print(a)
+def checkentry(l,entry):
+    for i in l:
+        if i[1] == entry:
+            return i[0]
+    return 'fail'
+def remove(l,entry):
+    for i in range(len(l)):
+        if l[i][1] == entry:
+            return i
+def hangman(n):
+    a =  '''    +-------+
+    |       |
+            |
+            |
+            |
+          __|__'''
+    b =  '''    +-------+
+    |       |
+    O       |
+            |
+            |
+          __|__'''
+    c =  '''    +-------+
+    |       |
+    O       |
+   /        |
+            |
+          __|__'''
+    d =  '''    +-------+
+    |       |
+    O       |
+   /|       |
+            |
+          __|__'''
+    e =  '''    +-------+
+    |       |
+    O       |
+   /|\      |
+            |
+          __|__'''
+    f =  '''    +-------+
+    |       |
+    O       |
+   /|\      |
+   /        |
+          __|__'''
+    g =  '''    +-------+
+    |       |
+    O       |
+   /|\      |
+   / \      |
+          __|__'''
+    if n==1:
+        print(a)
+    elif n==2:
+        print(b)
+    elif n==3:
+        print(c)
+    elif n==4:
+        print(d)
+    elif n==5:
+        print(e)
+    elif n==6:
+        print(f)
+    else:
+        print(g)
+
+words =[["i am an animal whoose name starts from rain","Ra_n_e_r",[(4,'d'),(2,'i'),(6,'a')]],["i am a famous american space web series","_tar_ar_",[(0,'s'),(4,'w'),(7,'s')]],["i have a saying on my name grapes are....","_o_",[(0,'f'),(2,'x')]],["i am a feeling that every living being have","f__r",[(1,'e'),(2,'a')]],["i am one of strongest animals of the forest","_o_il_a",[(0,'g'),(2,'r'),(5,'l')]],["i create things","_r_at_r",[(0,'c'),(2,'e'),(5,'oy')]],["i am the one who is writing this code","N_m_n",[(1,'a'),(3,'a')]],["i have four wheels","c_r",[(0,'a')]],["i am also known as red planet ","_ar_",[(0,'m'),(3,'s')]]]
+print("......................................................................................G.A.M.E.................................................................................................")
+print("Wlecome to hangman","......RULES......","-> You Will Be Given A Word","-> You Have To Fill It","-> If You Fail In Seven Attempts","-> Hangman Will Die",'''........THE FAITH OF HANGMAN'S LIFE IS NOW IN YOUR HAND!........''',"........................LET'S BEGIN.............................",sep ='\n')
+flag =True
+count =[]
+while flag:
+    w_u =[]
+    attempt =1
+    w = random.choice(words)
+    if len(count) == len(words):
+        print("SORRY FOR INCONVINIENCE BUT YOU HAVE TRIED ALL OUR WORDS")
+        break
+    else:
+        while w in count:
+            w = random.choice(words)
+        count.append(w)
+        print("Guess me")
+        print(w[0])
+        print(f"-> WORD : {w[1]} ")
+        flag1 = True
+        for i in range(7):
+            print(f"-> ATTEMPT : {attempt}",end ='\n\n')
+
+            while True:
+                if w[1].count('_') ==0:
+                    print("HURRAY YOU SAVED HANGMAN",end ='\n\n')
+                    save()
+                    flag1= False
+                    break
+                entry = input("ENTER A CHARACTER : ")
+                entry = entry.lower()
+                if entry not in w_u:
+                    w_u.append(entry)
+                if checkentry(w[2],entry) == 'fail' or w[1][checkentry(w[2],entry)] !='_':
+                    print("WRONG ANSWER ")
+                    hangman(attempt)
+                    print(f"ATTEMT REMAINING : {7-attempt}")
+                    print(f"WORD REMAIN = {w[1]}\t",end ='')
+                    print(f"WORDS USED : ",*w_u,sep ='  ',end='\n\n\n')
+                    break
+                else:
+                    ind = checkentry(w[2],entry)
+                    w[1] = convert(w[1],entry,ind)
+                    print("RIGHT CHOICE",end ='\n')
+                    print(f"COMPLETED WORD = {w[1]}\t",end ='')
+                    print(f"WORDS USED : ",*w_u,sep ='  ',end='\n\n\n')
+                    re = remove(w[2],entry)
+                    w[2].pop(re)
+            if i==6 and flag1==True:
+                print("YOU LOST ALL YOUR ATTEMPTS HANGMAN IS DEAD ",end='\n')
+                hangman(7)
+                ch = input("DO YOU WANNA PLAY AGAIN Y OR N : ")
+                if ch.lower() != 'y':
+                    flag =False
+                    print("Thanks for visiting us")
+                break
+            elif flag1 == False:
+                ch = input("DO YOU WANNA PLAY AGAIN Y OR N : ")
+                if ch.lower() != 'y':
+                    flag =False
+                    print("Thanks for visiting us")
+                break
+            else:
+                attempt+=1
+
+
+
+
+
+
+
+

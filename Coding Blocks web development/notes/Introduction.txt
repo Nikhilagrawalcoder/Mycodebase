@@ -1,0 +1,37 @@
+--------------------------------------------------Notes---------------------------------------------------------
+Important points:
+
+1.What is Hyper text?
+Hyper text is a text which have hypelinks present in them.
+2.What is Hyper link?
+Hyperlink are basically text which takes you to some other page or other reference material.
+3. What is a Markup?
+Markup is basically structure to your websites.
+4. What is Language?
+Language is a mode of communication.
+CSS--Cascading style sheets.
+5.What is CSS?
+CSS beautifies the webpage to make it look good.
+6.What is Javascript?
+Javascript is a programming language(scripting langugage) which is used to add interactivity in your websites. It is the only programming language that is understood by the browser directly.
+7.What is a programming language?
+Programming langugae is a languages in which we can write our own logics and those logics can be understood by the browser.
+Browser has two types of engines:
+1.Layout engine
+2.Javascript engine
+Difference between layout engine and javscript engine:
+Layout engine:--
+Html +CSS
+
+Javascript engine:--
+Javascript logics
+Engine is a software which is Combination of Codes.
+DNS(Domain name system):-- As humans it is difficult for us to memoise numbers so for the alternative of it we do remembers the names. Same goes with your websites. Each websites has a domain name system which is aligned with a unique ip address, so when we called the domain name system the Corresponding IP automatically gets call.
+Example:-- Instagram.com, google.com 
+Request response cycle:
+                                                                     
+
+
+
+
+

@@ -1,0 +1,114 @@
+Flow control: when we want to decision then it take some conditions.It include if ,if else,nested if ,if else if ladder, switch statement.
+IF STATEMENT:
+	      syntax:
+			if(condition){
+ 					// block of code which is to be executed}
+IF ELSE STATEMENT:
+		  syntax:
+			if(condition){
+					// block of code which is tobe executed}
+            		else{// block of code which is to be executed}
+IF ELSE LADDER:
+		syntax:
+			if(condition 1){// block of code which is to be executed}
+			else if(condition 2){// block of code which is to be executed}
+			else{// block of code which is to be executed}
+NESTED IF :
+	   syntax:
+		  if(condition1){
+if(condition2){// block of code which is to be executed}
+else{// block of code to be execute}}
+
+SWITCH:
+     switch (n)
+{
+    case 1: // code to be executed if n = 1;
+        break;
+    case 2: // code to be executed if n = 2;
+        break;
+    default: // code to be executed if n doesn't match any cases
+}
+
+
+LOOPS AND JUMP STATEMENT:
+                        loop is a type of concept in programming which is to be repeatedly by block of statement.
+There are two mainly types of loop:
+1. ENTRY CONTROLLED LOOPS: For loop and While loop are entry controlled loops.
+2. EXIT CONTROLLED LOOPS: do while loop are exit controlled loops.
+
+FOR loop:
+         syntax:
+                for (initialization expr; test expr; update expr)
+
+{    
+
+     // body of the loop
+
+     // statements we want to execute
+
+}
+WHILE loop:
+          syntax:
+                  initialization expression;
+while (test_expression)
+
+{
+
+   // statements
+
+ 
+
+  update_expression;
+}
+
+DO WHILE loop: in this semicolon is ended after while loop.In do while loop the loop body will execute at least once irrespective of test condition.
+             syntax:
+  initialization expression;
+do
+
+{
+
+   // statements
+
+
+
+   update_expression;
+} while (test_expression);
+NOTES:
+Use for loop when number of iterations is known beforehand, i.e. the number of times the loop body is needed to be executed is known.
+Use while loops where exact number of iterations is not known but the loop termination condition is known.
+Use do while loop if the code needs to be executed at least once like in Menu driven programs
+BREAK: it is a keyword used to terminate the loop
+Continue: it is a keyword used to escape the iteration of loop.
+GOTO: it is a statement which enables us to jump anywhere in the loop.
+
+FUNCTION::
+A function is a set of statements that take inputs, do some specific computation and produce output.
+< return-type > < function-name > (< set-of-arguments >) {
+    //block of statements
+}
+
+Formal & Actual Parameters
+
+The parameters passed to function are called actual parameters. For example, in the first program 10 and 20 are actual parameters. The parameters received by function are called formal parameters. For example, in the above program x and y are formal parameters.
+
+PASS BY VALUE AND PASS BY REFERENCE::
+When we pass directly the variable value in the function then we can say that we pass the value. But when we pass the adress of the variable in the function.
+int swap(int &a, int &b) { ... } 
+//add & before the parameters (call-by-reference)
+...
+int a = 5, b = 6;
+swap(a, b);  //calling the function remains the same
+
+INLINE FUNCTION:
+function do storing the current address of execution (to return back to), along with other registers. Also, allocation and de-allocation (upon exit) of variables local to the functions are done.
+Inline functions reduce this overhead by replacing the function definition at the place of the function call. i.e. inline-functions are expanded at the call location itself during compilation. This removes the function call overhead at the cost of a larger compilation code.
+Default Arguments::
+A Default Argument is a default value for a function argument. In case the user forgets to provide the parameter, the default value for that variable would be used.
+FUNCTION OVERLOADING:: 
+it allows the user to make two or more function with same name and different argument.
+Two rules::
+Return-Type is not a factor for uniqueness:
+Argument Names are not a factor for uniqueness.
+note:: topic extra to read variable arguments and function pointer.
+

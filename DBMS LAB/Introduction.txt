@@ -1,0 +1,27 @@
+SQl has parts:
+1.DDL(Data defintition language)
+2.DML(Data Manipulation LAnguhage)
+3.TCL(Transaction Control)
+4.DCL(DATaContorl)
+5.Dql(Data query language)
+
+
+DDL parts:
+1.Create
+2.Alter
+3.Drop
+DML parts:
+1.insert
+2.Update
+3.Delete
+TCL Parts:
+1.Commit
+2.Save
+3.Print
+DCL parts:
+1.Grant
+2.Revoke
+Dql parts:
+1.select
+
+ 
