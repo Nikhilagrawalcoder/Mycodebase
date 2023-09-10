@@ -1,0 +1,20 @@
+h1{
+    /* color:cyan; */
+    font-size: 26px;
+    font-family:sans-serif;
+    text-transform: uppercase;
+    font-style: italic;
+  }
+  h2{
+    font-size: 40px;
+    font-family: sans-serif;
+    
+  }
+  h3{
+    font
+  }
+  p{
+    font-size: 20px;
+    font-family: sans-serif;
+    line-height: 1.5;
+  }
