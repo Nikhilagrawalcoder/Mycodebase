@@ -1,0 +1,20 @@
+/* h1{
+    color:aqua;
+}
+p{
+    color:red;
+} */
+#ais{
+    color:darkblue;
+    background-color:aqua;
+}
+.sam{
+    font-family: cursive;
+}
+input[type="text"]{
+    background-color:orange;
+    color:rgb(111, 167, 27);
+}
+*{
+    border:2px solid black;
+}

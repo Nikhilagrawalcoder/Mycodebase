@@ -1,0 +1,16 @@
+body{
+    background-color:bisque;
+}
+h1{
+font-family: 'Times New Roman', Times, serif;
+}
+#lo{
+    font-style: italic;
+}
+h3{
+    color:orangered;
+}
+div{
+    padding-left:20%;
+    padding-right:20%;
+}
