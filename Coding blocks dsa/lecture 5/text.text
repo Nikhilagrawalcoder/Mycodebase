@@ -1,0 +1,2 @@
+primitive memory store in stack and non premitive memory store in heap
+reference variable will be 2 but array will be 1 in memory

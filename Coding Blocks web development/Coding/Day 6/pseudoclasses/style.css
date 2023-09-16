@@ -1,0 +1,17 @@
+h1{
+    color:blueviolet
+}
+h1:hover{
+    color:hotpink;
+    font-size: 50px;
+    
+}
+input:focus{
+    background-color: royalblue;
+}
+a{
+    color:brown;
+}
+a:active{
+    color:blue;
+}
