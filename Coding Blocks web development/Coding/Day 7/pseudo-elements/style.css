@@ -1,6 +1,19 @@
 h1::after{
 content: "lets study";
 }
-height::before{
-    content:""
+h1::before{
+    /* content:"daman diu"; */
+    content:'\1F494';
+}
+/* p::first-line{
+    background-color: aqua;
+    text-transform: uppercase;
+} */
+/* p::first-letter{
+color: darkcyan;
+font-size: 60px;
+
+} */
+p::-webkit-validation-bubble{
+    color:bisque;
 }

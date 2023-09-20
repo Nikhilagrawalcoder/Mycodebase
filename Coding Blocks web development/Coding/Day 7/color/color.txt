@@ -1,0 +1,9 @@
+color has three ways to do it R G B 
+R G B A 
+Hexadecimal
+primary color:R G B 
+a stands for alpha channel
+r for red;
+g for green;
+b for blue;
+hexadecimal start with # 

@@ -1,0 +1,6 @@
+ul > li {
+  color: red;
+  font-size: 25px;
+  border-top: 2px solid green;
+}
+/* inheitance is a property which is transfer their characterwtics like color,text-size */
