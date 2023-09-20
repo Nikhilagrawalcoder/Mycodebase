@@ -42,27 +42,26 @@
         //     
         int n;
         cin>>n;int a[n];
-        int sum=0;
-        int ans=0;
+       
         for (int i = 0; i < n; i++)
         {
             /* code */
             cin>>a[i];
-            if(a[i]==-1){
-                sum++;
-            }
-            else{
-                ans=max(ans,sum);
-                sum=0;
-            }
+           
            
         }
-        ans=max(sum,ans);
-// for(int i=0;i<n-1;i++){
-//     if(a[i]==-1 and a[i+1]==-1){
-//         sum++;
-//     }
-// }
-      cout<<ans;  
+        int sum=0;
+        int c=0;
+        for(int i=0;i<n;i++){
+if(a[i]<0 and sum<=0){
+    c++;
+    
+}
+else{
+    sum=sum+a[i];
+}
+        }
+        cout<<c;
+      
             return 0;
         }
