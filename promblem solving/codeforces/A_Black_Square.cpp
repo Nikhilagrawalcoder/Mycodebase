@@ -39,26 +39,10 @@
             cout<<setprecision(10);
     //        freopen("timber_input.txt", "r", stdin);
     //        freopen("timber_output.txt", "w", stdout);
-            int a[4];
-            
-            for(int i=0;i<4;i++){
-                cin>>a[i];
-            }
-            string s;
-            cin>>s;
-            int sum=0;
-            for(int i=0;i<s.size();i++){
-           
-            if(s[i]=='1'){
-                sum=sum+a[0];
-            }
-            else if(s[i]=='2')
-            sum=sum+a[1];
-            else if(s[i]=='3')
-            sum=sum+a[2];
-            else
-            sum=sum+a[3];
-            }
-            cout<<sum;
+            int t=1;
+            // cin>>t;
+            for(int i=1;i<=t;i++){
+        
+           }
             return 0;
         }
