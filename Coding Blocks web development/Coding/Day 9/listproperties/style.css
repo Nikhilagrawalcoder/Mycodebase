@@ -1,0 +1,9 @@
+li{
+   
+   list-style-position: inside;
+}
+li{
+    border-width: 1px;
+    border-color: rebeccapurple;
+    border-style: round;
+}

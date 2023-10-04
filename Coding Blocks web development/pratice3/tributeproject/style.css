@@ -1,0 +1,10 @@
+*{
+    background-color: rgb(237, 193, 237);
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2%;
+}
+img{
+    border-radius: 50%;
+    float:left;
+}

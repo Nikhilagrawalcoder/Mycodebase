@@ -1,0 +1,38 @@
+*{
+    margin:10px;
+    padding:10px;
+  }
+  div{
+      border:1px solid red;
+      width:100px;
+      height: 100px;
+      display:inline-block;
+    padding:1px;
+  }
+  section{
+    border:1px solid green;
+  }
+  /* #static #middle{
+      position: static;
+      top:100%;
+  }
+  #relative #middle{
+      position:relative;
+      top:50px;
+  }
+  #absolute #middle{
+      position:absolute;
+  }
+  #fixed #middle{
+    position: fixed;
+    
+
+
+  } */
+  #sticky{
+    height:600px;
+  }
+  #sticky #middle{
+    position: sticky;
+    top:10px;
+  }
