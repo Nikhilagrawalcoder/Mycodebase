@@ -1,0 +1,39 @@
+div{
+    border: 2px solid black;
+    height: 100px; 
+    width: 100px;
+    /* display: inline-block; */
+    display: flex;
+}
+section{
+    border: 2px solid red;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+    /* align-items: stretch; */
+    /* align-items: center;
+    flex-wrap:wrap-reverse; */
+    /* gap: 30px; */
+    /* row-gap: 100px;
+    column-gap: 100px; */
+    
+   
+    /* align-items: flex-start; */ 
+       /* align-items: stretch; */
+}
+/* 
+flex wrap is a parent property 
+
+
+*/
+#div3{
+    /* flex-grow: 1; */
+    flex-shrink: 2;
+}
+#div4{
+    /* flex-grow: 2; */
+}
+/* 
+1200 px , 991/992 px , 767 px , 576px */
