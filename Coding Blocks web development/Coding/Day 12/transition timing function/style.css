@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding:0;
+}
+div{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+section:hover div{
+    width: 100vw;
+    transition-duration: 30s;
+}
+#nik1{
+    transition-timing-function: linear;
+}
+#nik2{
+    transition-timing-function: ease-in;
+}
+#nik3{
+    transition-timing-function: ease-out;
+}
+#nik4{
+    transition-timing-function: ease-in-out;
+}

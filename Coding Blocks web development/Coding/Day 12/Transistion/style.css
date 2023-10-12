@@ -1,0 +1,13 @@
+.box{
+    width:100px;
+    height: 100px;
+    background-color: chartreuse;
+    transition-duration: 10s;
+
+    transition-property: border-radius background-color;
+}
+.box:hover{
+    border-radius: 50%;
+    background-color: aqua;
+    /* transition-duration: 10s; */
+}
