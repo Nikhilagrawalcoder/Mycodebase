@@ -1,0 +1,43 @@
+.div1{
+    background-color: antiquewhite;
+    height: 50px;
+    width: 50px;
+}
+.div2{
+    background-color: rgb(71, 175, 47);
+    height: 50px;
+    width: 50px;
+}
+.div3{
+    background-color: antiquewhite;
+    height: 50px;
+    width: 50px;
+}
+.div4{
+    background-color: antiquewhite;
+    height: 50px;
+    width: 50px;
+}
+.div5{
+    background-color: antiquewhite;
+    height: 50px;
+    width: 50px;
+}
+div{
+    transition-duration: 10s;
+    transform: rotate(69deg);
+    
+}
+    
+section{
+    display:flex;
+justify-content: space-evenly;
+background-color: aquamarine;
+height:500px;
+
+}
+section:hover div {
+    border-radius: 50%;
+    background-color: blue;
+    
+}
