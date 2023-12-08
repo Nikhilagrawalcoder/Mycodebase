@@ -1,0 +1,113 @@
+*{
+    margin:0px;
+}
+#navbar{
+    display:flex;
+    gap: 20px;
+    font-size: 20px;
+    color:black;
+    position:fixed;
+    
+}
+#e:hover{
+    
+    background-color: aqua;
+    
+}
+#header{
+    height:70vh;
+    background-image:url(https://t3.ftcdn.net/jpg/04/04/18/42/360_F_404184261_YjU4rkzVVwEFDkcY3ABX3ccM2rvCazVy.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+    background-attachment: relative;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+   
+
+    
+}
+#logo{
+    font-size: 30px;
+    color:gray;
+    padding-top: 150px;
+    padding-left: 150px;
+    display: flex;
+    justify-content: center;
+  
+   
+}
+#ph1{
+    height: 50px;
+    width: 50px;
+    align-items: center;
+}
+#main{
+    display: flex;
+    flex-direction: column;
+   
+    
+    
+}
+#abo{
+    padding-top: 100px;
+   display: flex;
+   justify-content: center;
+   
+}
+#de{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    
+}
+#ae{
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 50px;
+}
+#photo{
+    display:flex;
+    height:300px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    
+}
+#name{
+    padding-right: 150px;
+}
+#progr{
+   
+    padding-left: 70px;
+    padding-bottom: 50px;
+}
+#fd{
+    display: flex;
+    justify-content: center;
+}
+#dee{
+    display:flex;
+    background-color: black;
+    height: 150px;
+    padding-top: 50px;
+    color: aliceblue;
+    justify-content: space-between;
+    font-size: 25px;
+}
+#work{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+#fot{
+    background-color: black;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   
+}
