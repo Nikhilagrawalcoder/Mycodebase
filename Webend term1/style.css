@@ -1,0 +1,188 @@
+*{
+    margin:0;
+    padding:0;
+}
+.bg-img {
+    /* The image used */
+    background-image: url("https://th.bing.com/th/id/OIP.tvrnNG8jkBbx64qgxFFwXAHaE2?rs=1&pid=ImgDetMain");
+  
+    min-height: 700px;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    /* Needed to position the navbar */
+    position: relative;
+  }
+  
+  /* Position the navbar container inside the image */
+  .container {
+    position: fixed;
+    
+    
+  }
+  
+  /* The navbar */
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+    display:flex;
+    width: 100%;
+    position: fixed;
+    margin-left: 0px;
+  }
+  
+  /* Navbar links */
+  .topnav a {
+  
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    justify-content: space-between;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .centered {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color:blanchedalmond
+    
+  }
+  
+  .para{
+    display:flex;
+    flex-direction: column;
+    padding-top: 100px;
+    align-items: center;
+  }
+  #head{
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    color:grey;
+    padding-bottom: 20px;
+    
+  }
+  #paef{
+    margin-left: 150px;
+    margin-right: 150px;
+    padding-top: 20px;
+  }
+  .row {
+    display: flex;
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+  
+  .column {
+    flex: 33.33%;
+    padding: 5px;
+
+  }
+.cards{
+    height: 750px;
+    background-color: black;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#toue{
+    font-size: 50px;
+    margin-top: 50px;
+color:white;
+display: flex;
+align-items: center;
+}
+
+.cade{
+    display:flex;
+
+}
+#fote{
+    padding-top: 100px;
+    display: flex;
+    
+    flex-direction: column;
+    padding-bottom: 200px;
+}
+#q{
+margin:10px;
+}
+#q:hover{
+    transform: scale(1.05);
+   
+}
+#button1{
+    color:white;
+    background-color: green;
+}
+#button2{
+    color:white;
+    background-color: green;
+}
+#button3{
+    color:white;
+    background-color: green;
+}
+#button1:hover{
+    transform: scale(1.05);
+    background-color: black;
+
+}
+#button2:hover{
+    transform: scale(1.05);
+    background-color: black;
+
+}
+#button3:hover{
+    transform: scale(1.05);
+    background-color: black;
+
+}
+
+
+.cards{
+    position:sticky;
+}
+#details{
+    display: flex;
+    flex-direction: row;
+    padding-left: 200px;
+    justify-content: space-between;
+    padding-right: 200px;
+    
+}
+.cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nat{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.message{
+    display:flex;
+    flex-direction: column;
+    
+}
+#med{
+    display: flex;
+}
+#message{
+    margin: 10px;
+}
+.we{
+    width: 300px; height: 40px;
+}
