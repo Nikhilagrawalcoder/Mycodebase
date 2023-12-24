@@ -222,24 +222,13 @@ int main()
     //     input();
     //     cout<<"\n";
     // }
-    int t;
-    cin>>t;
-    map<string,int>mp;
-while(t--){
-    string s;
-    cin>>s;
-    mp[s]++;
-
-}
-string s="";
-int c=0;
-for(auto i:mp){
-    if(i.second>c){
-        c=i.second;
-        s=i.first;
+    int n,m;
+    cin>>n>>m;
+    int a[m];
+    for(int i=0;i<m;i++){
+        cin>>a[i];
     }
-}
-cout<<s;
+    
     return 0;
 }
 //End

@@ -222,24 +222,40 @@ int main()
     //     input();
     //     cout<<"\n";
     // }
-    int t;
-    cin>>t;
-    map<string,int>mp;
-while(t--){
-    string s;
-    cin>>s;
-    mp[s]++;
-
-}
-string s="";
-int c=0;
-for(auto i:mp){
-    if(i.second>c){
-        c=i.second;
-        s=i.first;
+    int n;
+    cin>>n;
+    int a[n];
+    int b=0;
+    int c=0;
+    int d=0;
+    int e=0;
+    for(int i=0;i<n;i++)
+    {
+        cin>>a[i];
+        if(a[i]==1)
+        b++;
+        else if(a[i]==2)
+        c++;
+        else if(a[i]==3)
+        d++;
+        else if(a[i]==4)
+        e++;
     }
-}
-cout<<s;
+    int f=0;
+   if(  c!=0 or d!=0 or e!=0){
+    
+   f=f+e;
+   f=f+(c/2)+c%2;
+  
+   f=f+((b+d)/2)+((b+d)%2);
+   cout<<f;
+   }
+   else if(d==0){
+    
+    cout<<(b/4);
+   }
+  
+    
     return 0;
 }
 //End
