@@ -332,6 +332,9 @@ int main()
     //     input();
     //     cout<<"\n";
     // }
+    int a, b;
+    cin >> a >> b;
+
     return 0;
 }
 // End

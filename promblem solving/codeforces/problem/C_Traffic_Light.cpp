@@ -332,6 +332,31 @@ int main()
     //     input();
     //     cout<<"\n";
     // }
+    int t;
+    cin >> t;
+    while (t--)
+    {
+        int n;
+        char x;
+        cin >> n >> x;
+        string s;
+        cin >> s;
+        string k = s + s;
+        int c = 0;
+        int ma = 0;
+        for (int i = 0; i < 2 * n; i++)
+        {
+            if (k[i] != 'g')
+                c++;
+            else
+            {
+
+                ma = max(ma, c);
+                c = 0;
+            }
+        }
+        cout << ma << endl;
+        }
     return 0;
 }
 // End

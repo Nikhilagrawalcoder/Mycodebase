@@ -332,6 +332,43 @@ int main()
     //     input();
     //     cout<<"\n";
     // }
+    int t;
+    cin >> t;
+    while (t--)
+    {
+        /* code */
+        int e;
+        cin >> e;
+        int a[e];
+        int p = 0;
+        int n = 0;
+        int o = 0;
+        for (int i = 0; i < e; i++)
+        {
+            /* code */
+            cin >> a[i];
+            if (a[i] == 0)
+                o++;
+            else if (a[i] > 0)
+                p++;
+            else
+                n++;
+        }
+        if (o)
+        {
+            cout << 0 << endl;
+        }
+        else if (n % 2 == 1)
+        {
+            cout << 0 << endl;
+        }
+        else
+        {
+            cout << 1 << endl;
+            cout << 1 << " " << 0 << endl;
+        }
+    }
+
     return 0;
 }
 // End

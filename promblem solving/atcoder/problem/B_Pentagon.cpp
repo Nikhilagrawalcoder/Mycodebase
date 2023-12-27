@@ -332,6 +332,14 @@ int main()
     //     input();
     //     cout<<"\n";
     // }
-    return 0;
+    string a, b, c, d;
+    cin >> a >> b >> c >> d;
+    // cout << a << b << c << d;
+    if (a == c and b == d and (a + b) == (c + d))
+        cout << "Yes";
+    else if (b == d and ((b - a) == (c - d)))
+        cout << "Yes";
+    else if (a == c and (()))
+        return 0;
 }
 // End

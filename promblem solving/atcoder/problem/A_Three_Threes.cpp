@@ -315,6 +315,12 @@ void input()
 {
     ll n;
     cin >> n;
+    string s = "";
+    for (int i = 0; i < n; i++)
+    {
+        s = s + (to_string)(n);
+    }
+    cout << s;
 }
 // Main
 int main()
@@ -332,6 +338,8 @@ int main()
     //     input();
     //     cout<<"\n";
     // }
+    input();
+
     return 0;
 }
 // End
