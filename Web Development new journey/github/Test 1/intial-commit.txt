@@ -1,0 +1,12 @@
+i am good <div class="mb-3">
+    <label class="visually-hidden" for="inputName"
+        >Hidden input label</label
+    >
+    <input
+        type="text"
+        class="form-control"
+        name="inputName"
+        id="inputName"
+        placeholder=""
+    />
+</div>
