@@ -7,6 +7,6 @@ console.log(typeof(population));
 
 
 let isisland=true;
-let language;
+const language="hindi";
 console.log(typeof(isisland));
 console.log(language);
