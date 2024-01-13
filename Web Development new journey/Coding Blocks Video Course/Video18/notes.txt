@@ -1,0 +1,12 @@
+What is a programming language?
+It is the language in which we can build our own logics.
+
+What is primitive?
+Lowest level of datatype which cannot be further divided.
+
+Browser has two engines:
+Layout engine 
+Js engine
+
+Primitive:
+string, boolean,number,undefined,null,Bigint,symbol
