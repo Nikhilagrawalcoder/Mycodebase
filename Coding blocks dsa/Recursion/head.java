@@ -9,7 +9,7 @@ System.out.println(ans);
 return ;}
     char ch1='H';
     char ch2='T';
-    if(ans.length()==0 || ans.charAt(ans.length()-1)!='H')   
+   //  if(ans.length()==0 || ans.charAt(ans.length()-1)!='H')   
     Print(n-1,ans+ch1);
     Print(n-1,ans+ch2);
 

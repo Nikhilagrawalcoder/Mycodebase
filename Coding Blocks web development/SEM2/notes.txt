@@ -12,3 +12,6 @@ Situation 2-When you have two function(function 1,function 2) if one of the func
 when nothing is return from a function then by default undefined 
 
 a call back function is basically when you pass it as a argument to some higher order functions and that passed function is be called inside that higher order function. this calling criteria must then it is called call back function.   `
+
+
+Array Methods
