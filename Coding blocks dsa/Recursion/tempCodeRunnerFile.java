@@ -1,1 +1,1 @@
- if(ans.length()==0 || ans.charAt(ans.length()-1)!='H')   
+Scanner sc=new Scanner(System.in);

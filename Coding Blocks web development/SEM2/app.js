@@ -16,5 +16,8 @@
 //     return true;
 // })
 // console.log(new);
-
-
+let sum=(a,b,c)=>{
+    return a+b+c;
+}
+let ans=sum(10,20,30);
+console.log(ans);

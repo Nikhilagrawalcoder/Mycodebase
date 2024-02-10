@@ -4,6 +4,7 @@ void print(vector<char>s,vector<char>v){
 if(v.size()==0)
 {
     for(int i=0;i<s.size();i++)
+    
     cout<<s[i]<<" ";
     cout<<endl;
 }
@@ -20,8 +21,7 @@ int main()
 
 vector<char>v={'a','b','c'};
 vector<char>s={};
-print(s,v);
-
+cout<<1;
 
     return 0;
 }
