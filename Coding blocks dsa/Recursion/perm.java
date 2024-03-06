@@ -1,6 +1,6 @@
 public class perm {
     public static void main(String[] args) {
-        String s="AAA";
+        String s="ABC";
         per(s,"");
 
     }
