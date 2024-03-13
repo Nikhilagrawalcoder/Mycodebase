@@ -1,0 +1,64 @@
+
+  
+/* Apply additional styles as needed */
+/* For example, you can style labels, add background colors, etc. */
+/* Apply additional styles for Avengers theme */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  #avengers-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: auto;
+    opacity: 0;
+    transition: opacity 2s ease-in-out form ;
+    -webkit-transition: opacity 2s ease-in-out form ;
+    -moz-transition: opacity 2s ease-in-out form ;
+    -ms-transition: opacity 2s ease-in-out form ;
+    -o-transition: opacity 2s ease-in-out form ;
+body{
+    background-color: #333;
+    text-align:center ;
+    font-family: 'Avengers', sans-serif;
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.5;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: #333;
+    padding: 20px;
+
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #333;
+    color: #fff;
+}
+
+input[type="submit"] {
+    background-color: #020f03;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Additional Avengers theme styles */
+label {
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Add more Avengers theme styles as needed */

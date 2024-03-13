@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey Form</title>
+    
+    <link rel="stylesheet" href="n.css">
+</head>
+<body>
+    <h1>Avenger Survey Form</h1>
+    <img id="avengers-logo" src="avengers-logo.png" alt="Avengers Logo">
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="age">age:</label>
+        <input type="number" id="age" name="age" required><br><br>
+        
+        <label for="favorite-avenger">Favorite Avenger:</label>
+        <select id="favorite-avenger" name="favorite-avenger" required>
+            <option value="">Select an Avenger</option>
+            <option value="iron-man">Iron Man</option>
+            <option value="captain-america">Captain America</option>
+            <option value="thor">Thor</option>
+            <option value="hulk">Hulk</option>
+            <option value="black-widow">Black Widow</option>
+            <option value="hawkeye">Hawkeye</option>
+            <option value="hawkeye">Wanda</option>
+            <option value="hawkeye">Doctor Strange</option>
+            <option value="hawkeye">Spiderman</option>
+            <option value="hawkeye">loki</option>
+            <option value="hawkeye">Deadpool</option>
+            <option value="hawkeye">Wolverine</option>
+        </select><br><br>
+        
+        <label for="comments">Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+    
+    <script>
+        // Add design and animation to Avengers theme
+const avengersTitle = document.querySelector('.avengers-title');
+const avengersLogo = document.querySelector('.avengers-logo');
+
+// Apply CSS styles for design
+avengersTitle.style.color = 'red';
+avengersTitle.style.fontSize = '24px';
+avengersLogo.style.width = '200px';
+avengersLogo.style.height = '200px';
+
+// Apply animation using CSS classes
+avengersTitle.classList.add('animated', 'bounce');
+avengersLogo.classList.add('animated', 'rotateIn');
+
+// You can also add event listeners to trigger animations on user interactions
+avengersLogo.addEventListener('click', () => {
+    avengersLogo.classList.toggle('animated', 'pulse');}
+
+    </script>
+</body>
+// Remove unnecessary </html> tag
+// </html>
+avengersLogo.addEventListener('click', () => {
+    avengersLogo.classList.toggle('animated', 'pulse');
+});}
+</html>
