@@ -1,23 +1,12 @@
-// let arr=[10,20,30,40];
-// // arr.forEach(function(item,index)
 
-// // {
-// //     console.log(item);
-// //     console.log(index);
-// // }
-// // let newarr=arr.map(function(item,index){
-// //     return item*2;
-// // });
-// // console.log(newarr);
-
-// let new = arr.filter(function(item,index)
-// {
-//     if(item>=50)
-//     return true;
-// })
-// console.log(new);
-let sum=(a,b,c)=>{
-    return a+b+c;
-}
-let ans=sum(10,20,30);
-console.log(ans);
+console.log("start");
+let id=setInterval(() => {
+    console.log("after 4 secs");
+}, 4000);
+setTimeout(() => {
+    console.log("d");
+}, 3000);
+setTimeout(() => {
+    clearInterval(id);
+}, 9000);
+console.log("end");
