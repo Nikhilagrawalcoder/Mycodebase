@@ -30,7 +30,45 @@ void solve() {
     cin>>n;
     string a,b;
     cin>>a>>b;
-    
+    bool flag=true;
+    int x=1;
+    int y=1;
+    while(x!=2 or y!=n){
+        
+if(x==1){
+    if(a[y+1]=='>')
+    y=y+2;
+    else{
+        if(b[y]=='>')
+        {
+            x=x+1;
+            y=y+1;
+        }
+        else{
+            flag=false;
+            break;
+        }
+    }
+}
+else if(x==2){
+    if(b[y+1]=='>')
+    y=y+2;
+    else{
+        if(a[y]=='>'){
+            x=x-1;
+            y=y+1;
+        }
+        else{
+            flag=false;break;
+        }
+    }
+}
+    }
+    if(flag)
+    cout<<"YES"<<"\n";
+    else{
+        cout<<"NO"<<"\n";
+    }
 }
 
 int main() {
