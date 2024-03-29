@@ -26,18 +26,35 @@ const ld EPS = 1e-9;
 
 
 void solve() {
-    int  n;
-    cin>>n;
-    int a[n];
-    for(int i=0;i<n;i++)
-    cin>>a[i];
-    int min=*min_element(a,a+n);
-    if(a[0]==min){
-        cout<<"YES"<<"\n";
+    ll n,x,y;
+    cin>>n>>x>>y;
+    ll u=n/x;
+    ll i=n;
+    ll sumx=0;
+    while(u--){
+        sumx=sumx+i;
+        i--;
     }
-    else{
-        cout<<"NO"<<"\n";
+    ll sumy=0;
+    double e=((double)(n*x-y*y)/(x*y));
+    double k=((double)(n-x)/y);
+ll m =   max(ceil(k),ceil(e));
+ 
+    ll w=max(y/x,x/y);
+    ll j=1;
+    
+    while(w--){
+        ++i;
+        sumy=sumy+i;
+        
     }
+    
+    while(m>0){
+        sumy=sumy+j;
+        j++;
+        m--;
+    }
+    cout<<sumx-sumy<<endl;
 }
 
 int main() {

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avengers Fan Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional CSS styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        ul, ol {
+            margin-left: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        form {
+            display: grid;
+            gap: 10px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Avengers Fan Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Characters</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>About the Avengers</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc id aliquam tincidunt, velit nunc fringilla nunc, id lacinia nunc nunc vitae nunc.</p>
+        </section>
+
+        <section>
+            <h2>Characters</h2>
+            <ul>
+                <li>Iron Man</li>
+                <li>Captain America</li>
+                <li>Thor</li>
+                <li>Hulk</li>
+                <li>Black Widow</li>
+                <li>Hawkeye</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Movies</h2>
+            <ol>
+                <li>The Avengers</li>
+                <li>Avengers: Age of Ultron</li>
+                <li>Avengers: Infinity War</li>
+                <li>Avengers: Endgame</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Gallery</h2>
+            <img src="avengers.jpg" alt="Avengers">
+        </section>
+
+        <section>
+            <h2>Contact</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2022 Avengers Fan Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>

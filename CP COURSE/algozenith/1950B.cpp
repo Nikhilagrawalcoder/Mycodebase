@@ -26,17 +26,41 @@ const ld EPS = 1e-9;
 
 
 void solve() {
-    int  n;
+    int n;
     cin>>n;
-    int a[n];
-    for(int i=0;i<n;i++)
-    cin>>a[i];
-    int min=*min_element(a,a+n);
-    if(a[0]==min){
-        cout<<"YES"<<"\n";
-    }
+    string a="##";
+    string b="..";
+    if(n==1)
+    cout<<"##"<<endl<<"##"<<endl;
     else{
-        cout<<"NO"<<"\n";
+        if(n%2==0){
+            string k="";
+            string e="";
+            for(int i=1;i<=(n/2);i++){
+k=k+a+b;
+e=e+b+a;
+            }
+           for(int i=1;i<=n;i++){
+            if(i%2==0)
+            cout<<e<<endl<<e<<endl;
+            else
+            cout<<k<<endl<<k<<endl;
+           }
+        }
+        else{
+            string k=a;
+            string e=b;
+            for(int i=1;i<=(n/2);i++){
+                k=k+b+a;
+                e=e+a+b;
+            }
+           for(int i=1;i<=n;i++){
+            if(i%2==0)
+            cout<<e<<endl<<e<<endl;
+            else
+            cout<<k<<endl<<k<<endl;
+           }
+        }
     }
 }
 

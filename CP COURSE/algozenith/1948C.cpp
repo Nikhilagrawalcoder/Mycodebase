@@ -33,16 +33,18 @@ void solve() {
     bool flag=true;
     int x=1;
     int y=1;
-    while(x!=2 or y!=n){
+    while(true){
         
 if(x==1){
-    if(a[y+1]=='>')
+    if(a[y]=='>')
     y=y+2;
     else{
-        if(b[y]=='>')
+        if(b[y-1]=='>')
         {
             x=x+1;
             y=y+1;
+            if(x==2 and y==n)
+            break;
         }
         else{
             flag=false;
@@ -51,10 +53,12 @@ if(x==1){
     }
 }
 else if(x==2){
-    if(b[y+1]=='>')
+    if(b[y]=='>'){
     y=y+2;
+    if(x==2 and y==n)
+    break;}
     else{
-        if(a[y]=='>'){
+        if(a[y-1]=='>'){
             x=x-1;
             y=y+1;
         }

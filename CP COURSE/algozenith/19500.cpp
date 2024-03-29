@@ -26,18 +26,15 @@ const ld EPS = 1e-9;
 
 
 void solve() {
-    int  n;
-    cin>>n;
-    int a[n];
-    for(int i=0;i<n;i++)
-    cin>>a[i];
-    int min=*min_element(a,a+n);
-    if(a[0]==min){
-        cout<<"YES"<<"\n";
-    }
-    else{
-        cout<<"NO"<<"\n";
-    }
+   int a,b,c;
+   cin>>a>>b>>c;
+   if(b>a and b>c)
+   cout<<"PEAK"<<"\n";
+   else if(a<b and b<c){
+    cout<<"STAIR"<<"\n";
+   } 
+   else
+   cout<<"NONE"<<"\n";
 }
 
 int main() {
