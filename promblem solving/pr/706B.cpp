@@ -48,20 +48,9 @@ ll mod_div(ll a, ll b, ll m) {a = a % m; b = b % m; return (mod_mul(a, mminvprim
 
 void solve() {
 
-int n;
-cin>>n;
-vector<int>a(n);
-for(int i=0;i<n;i++)
-cin>>a[i];
-sort(a.begin(),a.end());
-int q;
-cin>>q;
-while(q--){
-int m;
-cin>>m;
-int c=upper_bound(a.begin(),a.end(),m)-a.begin();
-cout<<c<<endl;
-}
+int n;cin>>n;
+vector<int>v(n);
+
 
 
 

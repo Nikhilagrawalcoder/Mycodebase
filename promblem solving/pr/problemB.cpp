@@ -1,58 +1,49 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <limits>
+
 using namespace std;
 
-class Node {
-public:
-    int data;
-    Node* left;
-    Node* right;
+int main()
+{
+    int t;
+    cin >> t;
 
-    Node(int val) {
-        data = val;
-        left = right = nullptr;
+    while (t > 0)
+    {
+        int n;
+        cin >> n;
+        vector<int> a(n);
+        long long sum = 0;
+        for (int i = 0; i < n; ++i)
+        {
+            cin >> a[i];
+            sum += a[i];
+        }
+
+        int max_xor = 0;
+        int mask = 0;
+        for (int i = 31; i >= 0; --i)
+        {
+            mask |= (1 << i);
+            int max_xor_candidate = max_xor | (1 << i);
+            int prefix_xor = 0;
+            for (int j = 0; j < n; ++j)
+            {
+                prefix_xor ^= (a[j] & mask);
+                if (prefix_xor == max_xor_candidate)
+                {
+                    max_xor = max_xor_candidate;
+                    break;
+                }
+            }
+        }
+
+        long long minVal = sum - max_xor;
+        cout << minVal << endl;
+        t--;
     }
-};
-
-int cnt = 0;
-
-// /**
-//  * 
-//  * @param root      Root Node
-//  * @param k         Minimum difference in height of subtrees for uneven node
-//  * @return          Number of uneven nodes
-//  */
-int helper(Node* root, int k) {
-    if (root == nullptr) return 0;
-    int lh = helper(root->left, k);
-    int rh = helper(root->right, k);
-    if (abs(lh - rh) >= k) cnt++;
-    return max(lh, rh) + 1;
-}
-
-int countUneven(Node* root, int k) {
-    cnt = 0;
-    helper(root, k);
-    return cnt;
-}
-
-Node* createTree(vector<int>& a, int i) {
-    if (i >= a.size() || a[i] == -1) return nullptr;
-    Node* newnode = new Node(a[i]);
-    newnode->left = createTree(a, 2 * i + 1);
-    newnode->right = createTree(a, 2 * i + 2);
-    return newnode;
-}
-
-int main() {
-    int n, k;
-    cin >> n >> k;
-    vector<int> a(n);
-    for (int i = 0; i < n; i++) {
-        cin >> a[i];
-    }
-
-    Node* root = createTree(a, 0);
-    cout << countUneven(root, k) << endl;
 
     return 0;
 }

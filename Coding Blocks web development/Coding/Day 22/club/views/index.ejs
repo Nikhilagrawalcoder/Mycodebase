@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="/songs/new">Add New Song</a>
+    <h1>DISPLAYING ALL THE songs</h1>
+    <% for(let item of allSongs){ %>
+        <h2> <%=item._id%> </h2>
+        <h2> <%=item.songName%> </h2>
+        <h2> <%=item.duration%> </h2>
+        <h2> <%=item.singerName%> </h2>
+        <h2> <%=item.singerAge%> </h2>
+        <a href="/songs/<%=item._id%>">show</a>
+    <% } %>
+</body>
+</html>

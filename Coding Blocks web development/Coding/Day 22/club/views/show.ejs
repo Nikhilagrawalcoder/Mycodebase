@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Displaying a particular product</h1>
+
+    <div>
+        <h2> <%=foundSong._id%> </h2>
+        <h2> <%=foundSong.songName%> </h2>
+        <h2> <%=foundSong.duration%> </h2>
+        <h2> <%=foundSong.singerName%> </h2>
+        <h2> <%=foundSong.SingerAge%> </h2>
+        <a href="/songs">Go back</a>
+        <a href="/songs/<%=foundSong._id%>/edit">Edit</a>
+        <form action="/songs/<%=foundSong._id%>?_method=DELETE" method="post">
+            <button>delete</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -47,38 +47,16 @@ ll mod_div(ll a, ll b, ll m) {a = a % m; b = b % m; return (mod_mul(a, mminvprim
 
 
 void solve() {
+
+
 int n;
-        cin >> n;
-        
-        vector<int> a(n), b(n);
-        for (int i = 0; i < n; i++) {
-            cin >> a[i];
-        }
-        for (int i = 0; i < n; i++) {
-            cin >> b[i];
-        }
-        
-        int likesA = 0, dislikesA = 0, neutralA = 0;
-        int likesB = 0, dislikesB = 0, neutralB = 0;
-        
-        for (int i = 0; i < n; i++) {
-            if (a[i] == 1) likesA++;
-            else if (a[i] == -1) dislikesA++;
-            else neutralA++;
-            
-            if (b[i] == 1) likesB++;
-            else if (b[i] == -1) dislikesB++;
-            else neutralB++;
-        }
-        
-        
-        int min_positive_reviews = min(likesA + dislikesB, likesB + dislikesA);
-        int total_positive_reviews = likesA + likesB;
-        
-      
-        int max_possible_rating = (total_positive_reviews - min_positive_reviews) / 2 + min_positive_reviews;
-        
-        cout << max_possible_rating << endl;
+cin>>n;
+vector<int>a(n),b(n);
+for(int i=0;i<n;i++)
+cin>>a[i];
+for(int i=0;i<n;i++)
+cin>>b[i];
+
 
 
 }
